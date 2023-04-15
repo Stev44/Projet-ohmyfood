@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 15px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
+}
+
+.headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLogo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.section-location {
+    background: #EAEAEA;
+}
+
+.locationText {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-weight:bold;
+    font-size: 16px;
+    font-family: 'roboto';
+}
+
+.section-title {
+    padding: 40px 0px 40px 0px;
+    background: #F7F7F7;
+}
+
+.centerSectionTitle h1, .centerSectionTitle p, .btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+}
+
+.centerSectionTitle h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    width: 75%;
+}
+
+.centerSectionTitle p {
+    font-size: 18px;
+    line-height: 21px;
+    width: 80%;
+}
+
+.centerSectionTitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    padding: 15px 15px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btnText {
+    font-size: 16px;
+    color: white;
+}
+
+.section-restaurants {
+    background: #F7F7F7;
+    padding: 20px;
+}
+
+.restaurantsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    object-fit: cover;
+    height: 175px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
+}
+
+.contentCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    height: 50px;    
+}
+
+.textCard {
+    line-height: 10px;
+    font-family: 'roboto';
+}
+
+.textCard h2{
+    font-size: 20px;
+}
+
+.textCard p {
+    font-size: 18px;
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+}
+
+.imgText {
+
+    margin: 0 auto;
+    color: #008766;;
+    left: 70%;
+    
+    border-radius: 2px;
+    background-color: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+.new1 {
+    height: 175px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+
+.new2 {
+    height: 175px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+
+.textNew {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textNew p {
+    width: 60px;
+    margin-right: 15px;
+    text-align: center;
+    color: #008766;
+    border-radius: 2px;
+    background-color: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
