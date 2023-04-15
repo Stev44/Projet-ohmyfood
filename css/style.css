@@ -31,7 +31,6 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    padding: 20px;
     font-weight:bold;
     font-size: 16px;
     font-family: 'roboto';
