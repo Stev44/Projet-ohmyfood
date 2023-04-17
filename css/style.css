@@ -16,6 +16,11 @@ header {
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
 }
 
+main {
+    margin: 0;
+    background: #F7F7F7;
+}
+
 .headerLogo {
     display: flex;
     justify-content: center;
@@ -91,7 +96,7 @@ header {
 .btn {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 175px;
     margin-top: 20px;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     padding: 15px 15px;
@@ -102,6 +107,11 @@ header {
 .btnText {
     font-size: 16px;
     color: white;
+}
+
+.section-option {
+    background-color: white;
+    padding-top: 20px;
 }
 
 .section-option h1{
@@ -162,6 +172,7 @@ header {
 .section-restaurants {
     background: #F7F7F7;
     padding: 20px;
+    padding-bottom: 70px;
 }
 
 .restaurantsCard {
@@ -224,7 +235,6 @@ header {
     margin: 0 auto;
     color: #008766;;
     left: 70%;
-    
     border-radius: 2px;
     background-color: #99E2D0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -269,6 +279,41 @@ header {
     font-size: 16px;
     font-weight: bold;
     font-family: 'roboto';
+}
+
+footer {
+    background-color: #353535;
+    padding: 30px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1px;
+    color: white;
+    font-size: 18px;
+}
+
+.group h3 {
+    font-family: 'Shrikhand';
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.textList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.partner {
+    margin-right: 10px;
+}
+
+.ustensil {
+    margin-right: 18px;
 }
 
 /******** pages **********/ 
