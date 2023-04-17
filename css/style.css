@@ -42,7 +42,7 @@ main {
 }
 
 .logo img {
-    width: 40%;
+    width: 160px;
 }
 
 .section-location {
@@ -118,7 +118,7 @@ main {
     padding-left: 20px; padding-top: 10px;
 }
 
-.containerOption {
+.groupOption {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -180,6 +180,18 @@ main {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    gap: 25px;
+}
+
+.groupCard {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.containerCard {
+    display: flex;
+    flex-direction: column;
     gap: 25px;
 }
 
@@ -397,4 +409,60 @@ span {
     align-items: end;
     font-size: 14px;
     font-weight: bold;
+}
+
+/********* Desktop min-1024px ***********/
+
+@media (min-width: 1024px) {
+
+    .groupOption {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .option {
+        padding-right: 90px;
+    }
+
+    .blocOption {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerOption {
+        margin: auto;
+    }
+
+    .containerCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px; padding-right: 100px;
+        gap: 50px;
+    }
+
+    .groupCard {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .group {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 90px;
+    }
+
+    footer {
+        padding-bottom: 10px;
+        padding-top: 50px;
+        padding-right: 50px;
+    }
+
+    .groupList {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
 }
