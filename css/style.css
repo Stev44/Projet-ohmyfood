@@ -16,11 +16,6 @@ header {
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
 }
 
-main {
-    margin: 0;
-    background: #F7F7F7;
-}
-
 .headerLogo {
     display: flex;
     justify-content: center;
@@ -160,7 +155,7 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 20px;
+    transform: translateX(-65px);
     color: white;
     background-color:#9356DC ;
     width: 25px;
@@ -336,6 +331,11 @@ span {
     padding-bottom: 5px;
 }
 
+.backImg {
+    position: relative;
+    z-index: 1;
+}
+
 .backImg img{
     object-fit: cover;
     height: 275px;
@@ -344,7 +344,8 @@ span {
 
 .section-menu {
     position: relative;
-    top: -60px;
+    z-index: 2;
+    margin-top: -60px;
     background-color: #F7F7F7;
     border-radius: 40px 40px 0px 0px;
     padding: 15px 15px;
@@ -411,6 +412,10 @@ span {
     font-weight: bold;
 }
 
+.commandBtn {
+    margin-bottom: 40px;
+}
+
 /********* Desktop min-1024px ***********/
 
 @media (min-width: 1024px) {
@@ -465,4 +470,31 @@ span {
         flex-direction: row;
         gap: 25px;
     }
+
+
+    /***********pages ********/
+
+    .section-menu {
+        width: 70%;
+        margin: auto;
+        margin-top: -40px;
+    }
+
+    .titleHeart {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .formule {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .centerSectionTitle h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+
 }
