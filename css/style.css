@@ -231,12 +231,6 @@ header {
     font-size: 18px;
 }
 
-.heart {
-    display: flex;
-    align-items: center;
-    font-size: 27px;
-}
-
 .imgText {
 
     margin: 0 auto;
@@ -383,6 +377,7 @@ span {
 }
 
 .menu {
+    position: relative;
     display: flex;
     justify-content:space-between;
     background-color: white;
@@ -415,6 +410,44 @@ span {
 .commandBtn {
     margin-bottom: 40px;
 }
+
+.heart {
+    padding-right: 45px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.heart i{
+    position: absolute;
+    
+}
+
+.heartFull {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+
+.heartFull:hover {
+    opacity: 1;
+    background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.menu::after {
+    content:"";
+    background-color: aqua;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 0px 15px 15px 0px;
+}
+
 
 /********* Desktop min-1024px ***********/
 
