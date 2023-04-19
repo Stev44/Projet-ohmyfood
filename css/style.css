@@ -386,18 +386,28 @@ span {
     padding-right: 10px; padding-left: 10px;
     font-family: 'Roboto'; 
     gap: 15px;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
 }
 
 .menuText {
     line-height: 5px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .menuText h3 {
     font-size: 16px;
+    padding-top: 5px; padding-bottom: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .menuText p {
     font-size: 14px;
+    padding-top: 5px; padding-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .price {
@@ -405,6 +415,8 @@ span {
     align-items: end;
     font-size: 14px;
     font-weight: bold;
+    margin-right: 10px;
+    
 }
 
 .commandBtn {
@@ -437,16 +449,41 @@ span {
     -webkit-background-clip: text;
 }
 
-.menu::after {
-    content:"";
-    background-color: aqua;
-    width: 60px;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    border-radius: 0px 15px 15px 0px;
+.menu:hover .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-left 0.5s ease-out;
+    transform-origin: right;
 }
+
+
+.menu:hover .price {
+    padding-right: 60px;
+    transition: 0.5s ease-out;
+  }
+
+.check {
+    display: none;
+    position: absolute;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 20px;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: scaleX(0); 
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
 
 
 /********* Desktop min-1024px ***********/
