@@ -7,6 +7,96 @@ html, body {
     font-family: 'roboto';
 }
 
+.loader {
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 4;
+    animation: loader 2s linear;
+    visibility: hidden;
+}
+
+.loaderSpin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 5;
+    border: 10px solid rgba(255, 255, 255, 0);;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear;
+    visibility: hidden;
+}
+
+.loaderForks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.loaderForks .ustensil {
+    margin: auto;
+    font-size: 25px;
+    color: #353535;
+    animation: forks 2s linear;
+}
+
+@keyframes rotate {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes forks {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 h1 {
     font-weight: bolder;
 }
@@ -95,6 +185,7 @@ header {
 .btn {
     display: flex;
     justify-content: center;
+    cursor: pointer;
     width: 175px;
     margin-top: 20px;
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -106,6 +197,12 @@ header {
 .btnText {
     font-size: 16px;
     color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transition: 300ms;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .section-option {
@@ -167,6 +264,12 @@ header {
     height: 25px;
     border-radius: 20px;
     font-size: 14px;
+}
+
+.option:hover {
+    opacity: 0.9;
+    transition: 300ms;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .section-restaurants {
@@ -432,7 +535,6 @@ span {
 
 .commandBtn {
     margin-bottom: 40px;
-    cursor: pointer;
 }
 
 .heart {
@@ -452,6 +554,7 @@ span {
     opacity: 0;
     transition-property: all;
     transition-duration: 400ms;
+    color: rgba(255, 255, 255,0);
 }
 
 .heartFull:hover {
@@ -462,7 +565,7 @@ span {
     -webkit-background-clip: text;
 }
 
-.menu:active .check {
+.menu:hover .check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -471,7 +574,7 @@ span {
 }
 
 
-.menu:active .price {
+.menu:hover .price {
     padding-right: 60px;
     transition: 0.3s ease-out;
   }
